@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/be3e9fc394.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Neucha|Pacifico|Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Akan Birthday Calculator || Evans Kiptarus Kibet</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#"></a></li>
+            </ul>
+        </nav>
+        <div class="jumbotron">
+            <h2>Akan BirthDay Calculator</h2>
+            <p>A web application that takes a user's birthday and calculates the day of the week they were born and
+                then
+                depending on their gender outputs their Akan Name</p>
+            <p>Enter Day, Month, Year and gender to output Akan name:</p>
+        </div>
+
+        <div id="calculator" class="row" style="border:1px solid #F3F2F1; border-radius: 8px;">
+            <div class="myForm col-md-7">
+                <form>
+                    <div class="container">
+                        <div class="form-group row">
+                            <div class="col-sm-4">
+                                <label for="day" class="col-form-label">Day</label>
+                                <input class="form-control" type="number" name="day" id="day" min="1" max="31"
+                                    placeholder="1-31">
+                                <span class="show-error">Value must be between 1-31</span>
+                            </div>
+                            <div class="col-sm-4">
+                                <label for="month" class="col-form-label">Month</label>
+                                <input type="number" name="month" id="month" class="form-control" min="1" max="12"
+                                    placeholder="1-12">
+                                <span class="show-error">Value must be between 1-12</span>
+                            </div>
+                            <div class="col-sm-4">
+                                <label for="year" class="col-form-label">Year</label>
+                                <input class="form-control" id="year" name="year" type="number" min="1900" max="2023"
+                                    placeholder="1900-2023">
+                                <span class="show-error">Value must be between 1900-2023</span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-4">
+                                <label for="inputPassword3" class="col-sm-2 col-form-label">Gender</label>
+                                <select name="sex" id="sex" class="form-control">
+                                    <option value=""></option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                        <input type="submit" value="View Akan Name" class="btn btn-primary" disabled>
+                    </div>
+                </form>
+            </div>
+            <div class="outcome col-md-5">
+                <div>
+                    <h3>Day of week :</h3>
+                    <p id="dayOfWeek"></p>
+                </div>
+                <div>
+                    <h3>Akan Name : </h3>
+                    <p id="akanName"></p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>copyright&copy;2022. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
